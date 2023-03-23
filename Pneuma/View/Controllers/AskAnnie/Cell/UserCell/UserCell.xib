@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="62" id="KGk-i7-Jjw" customClass="UserCell" customModule="Pneuma" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Cr-ka-3Yc">
+                        <rect key="frame" x="16" y="8" width="80" height="39"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Annie" translatesAutoresizingMaskIntoConstraints="NO" id="j38-37-nla">
+                                <rect key="frame" x="8" y="11.5" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j38-37-nla" secondAttribute="height" multiplier="1:1" id="8g4-tl-8T1"/>
+                                    <constraint firstAttribute="height" constant="16" id="dph-Xo-fhv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mI-PG-GXS">
+                                <rect key="frame" x="32" y="8" width="40" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="stQ-AO-suG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="tuQ-0n-2Is"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j38-37-nla" firstAttribute="top" secondItem="2Cr-ka-3Yc" secondAttribute="top" constant="11.5" id="24N-fA-XJX"/>
+                            <constraint firstItem="0mI-PG-GXS" firstAttribute="top" secondItem="j38-37-nla" secondAttribute="top" constant="-3.5" id="3IC-se-K2R"/>
+                            <constraint firstItem="j38-37-nla" firstAttribute="leading" secondItem="2Cr-ka-3Yc" secondAttribute="leading" constant="8" id="GTv-B1-PkE"/>
+                            <constraint firstAttribute="trailing" secondItem="0mI-PG-GXS" secondAttribute="trailing" constant="8" id="fZg-Wk-h7F"/>
+                            <constraint firstItem="0mI-PG-GXS" firstAttribute="leading" secondItem="j38-37-nla" secondAttribute="trailing" constant="8" id="mI3-dA-dP8"/>
+                            <constraint firstAttribute="bottom" secondItem="0mI-PG-GXS" secondAttribute="bottom" constant="8" id="ueD-jb-fEW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="2Cr-ka-3Yc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="CWn-Jl-3rj"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Cr-ka-3Yc" secondAttribute="bottom" constant="8" id="DPv-hL-HLC"/>
+                    <constraint firstItem="2Cr-ka-3Yc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="h9i-qE-7te"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Cr-ka-3Yc" secondAttribute="trailing" constant="40" id="pO6-yf-5jo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgUser" destination="j38-37-nla" id="quM-ff-Lbd"/>
+                <outlet property="lblUserVoice" destination="0mI-PG-GXS" id="4hs-4T-AAw"/>
+                <outlet property="viewBG" destination="2Cr-ka-3Yc" id="G23-S0-PxA"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Annie" width="1000" height="657"/>
+    </resources>
+</document>

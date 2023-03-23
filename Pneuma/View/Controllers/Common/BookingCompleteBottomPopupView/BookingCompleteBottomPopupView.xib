@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BookingCompleteBottomPopupView" customModule="Pneuma" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="307"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icBuildings" translatesAutoresizingMaskIntoConstraints="NO" id="O3F-2T-j7t">
+                    <rect key="frame" x="20" y="64" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Y49-Bp-ECb"/>
+                        <constraint firstAttribute="height" constant="70" id="rWS-o4-ni1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Waiting at the Airport" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS9-Yp-Wdw">
+                    <rect key="frame" x="105" y="69" width="123" height="18.5"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                    <color key="textColor" name="marine"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aF-fD-sRy">
+                    <rect key="frame" x="105" y="92.5" width="60.5" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                    <color key="textColor" red="0.4392156862745098" green="0.16470588235294117" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Maybe you want to eat, visit a museum, do some sightseeing, or buy cute souvenirs for your friends? Plan something fun!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="212-h3-ssj">
+                    <rect key="frame" x="105" y="128" width="289" height="55"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                    <color key="textColor" name="marine"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h32-ya-r33">
+                    <rect key="frame" x="35" y="223" width="344" height="54"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="Hb4-1v-bQA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
+                    <state key="normal" title="City Discover" backgroundImage="buttonBGPurple">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="okButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="JPZ-CD-fsQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="hS9-Yp-Wdw" firstAttribute="leading" secondItem="O3F-2T-j7t" secondAttribute="trailing" constant="15" id="7Un-sT-9uk"/>
+                <constraint firstItem="8aF-fD-sRy" firstAttribute="leading" secondItem="hS9-Yp-Wdw" secondAttribute="leading" id="7mj-VT-4hn"/>
+                <constraint firstItem="O3F-2T-j7t" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="T53-k6-edB"/>
+                <constraint firstItem="8aF-fD-sRy" firstAttribute="top" secondItem="hS9-Yp-Wdw" secondAttribute="bottom" constant="5" id="Tmb-xL-rru"/>
+                <constraint firstItem="212-h3-ssj" firstAttribute="top" secondItem="8aF-fD-sRy" secondAttribute="bottom" constant="10" id="VyH-Ns-Ayi"/>
+                <constraint firstAttribute="trailing" secondItem="212-h3-ssj" secondAttribute="trailing" constant="20" id="d97-U9-iEe"/>
+                <constraint firstItem="212-h3-ssj" firstAttribute="leading" secondItem="8aF-fD-sRy" secondAttribute="leading" id="gQc-7F-JjI"/>
+                <constraint firstItem="hS9-Yp-Wdw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="ihR-Pw-yeX"/>
+                <constraint firstItem="h32-ya-r33" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="lgO-MC-CEa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="h32-ya-r33" secondAttribute="bottom" constant="30" id="qm4-Pn-Ztg"/>
+                <constraint firstAttribute="trailing" secondItem="h32-ya-r33" secondAttribute="trailing" constant="35" id="vO3-aq-B6d"/>
+                <constraint firstItem="O3F-2T-j7t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xt2-aT-kDP"/>
+                <constraint firstItem="h32-ya-r33" firstAttribute="top" secondItem="212-h3-ssj" secondAttribute="bottom" constant="40" id="xxa-uj-Hws"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="212-h3-ssj" id="nTq-F7-jWd"/>
+                <outlet property="imageView" destination="O3F-2T-j7t" id="ld5-Ck-5Oo"/>
+                <outlet property="okButton" destination="h32-ya-r33" id="57Q-8t-fWO"/>
+                <outlet property="timeLabel" destination="8aF-fD-sRy" id="XYK-MZ-HQE"/>
+                <outlet property="titleLabel" destination="hS9-Yp-Wdw" id="U0J-4C-wE8"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="295.64732142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buttonBGPurple" width="315" height="54"/>
+        <image name="icBuildings" width="60" height="60"/>
+        <namedColor name="marine">
+            <color red="0.039215686274509803" green="0.14117647058823529" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

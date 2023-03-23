@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>948725186420-8lhvq6j5q5el9vf7q5jtbaoi7kq32800.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.948725186420-8lhvq6j5q5el9vf7q5jtbaoi7kq32800</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDVGrcAe_FNxrqB4yhwrVMRemqYIbHxrTM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>948725186420</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.itechnola.Pneuma-IOS</string>
+	<key>PROJECT_ID</key>
+	<string>penuma</string>
+	<key>STORAGE_BUCKET</key>
+	<string>penuma.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:948725186420:ios:03b0e79080b3eb45047621</string>
+</dict>
+</plist>

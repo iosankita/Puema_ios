@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChooseAddressTableCell" rowHeight="130" id="KGk-i7-Jjw" customClass="ChooseAddressTableCell" customModule="Pneuma" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xgJ-1y-QKB">
+                        <rect key="frame" x="25" y="18" width="302" height="97"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationIconGray" translatesAutoresizingMaskIntoConstraints="NO" id="ZNJ-Zt-DeZ">
+                                <rect key="frame" x="0.0" y="28.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="mUA-L4-mUx"/>
+                                    <constraint firstAttribute="width" secondItem="ZNJ-Zt-DeZ" secondAttribute="height" id="zs9-be-rW0"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fRH-Ot-kvL">
+                                <rect key="frame" x="60" y="15" width="242" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York John F. Kennedy (JFK)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovz-X5-99t">
+                                        <rect key="frame" x="0.0" y="0.0" width="242" height="45"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                        <color key="textColor" name="appBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USA" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abf-nG-FLA">
+                                        <rect key="frame" x="0.0" y="47" width="242" height="20"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" name="marine-opacity-50"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDT-sp-FVT">
+                        <rect key="frame" x="22" y="129" width="288" height="1"/>
+                        <color key="backgroundColor" name="cloudyBlue-opacity-20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="pLs-tt-veC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="NDT-sp-FVT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="2bd-Db-aeE"/>
+                    <constraint firstAttribute="trailing" secondItem="xgJ-1y-QKB" secondAttribute="trailing" constant="5" id="ClZ-Os-6In"/>
+                    <constraint firstAttribute="trailing" secondItem="NDT-sp-FVT" secondAttribute="trailing" constant="22" id="DF7-nr-5RL"/>
+                    <constraint firstItem="xgJ-1y-QKB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Vsn-3m-AN2"/>
+                    <constraint firstItem="NDT-sp-FVT" firstAttribute="top" secondItem="xgJ-1y-QKB" secondAttribute="bottom" constant="14" id="cqD-az-gzz"/>
+                    <constraint firstAttribute="bottom" secondItem="NDT-sp-FVT" secondAttribute="bottom" id="gon-uu-xkn"/>
+                    <constraint firstItem="xgJ-1y-QKB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="swF-J4-pRz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="subtitleLabel" destination="Abf-nG-FLA" id="PqB-dz-TTy"/>
+                <outlet property="titleImageView" destination="ZNJ-Zt-DeZ" id="fld-og-ggM"/>
+                <outlet property="titleLabel" destination="ovz-X5-99t" id="Hc7-J8-5dr"/>
+            </connections>
+            <point key="canvasLocation" x="75.362318840579718" y="128.57142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="locationIconGray" width="40" height="41"/>
+        <namedColor name="appBlack">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cloudyBlue-opacity-20">
+            <color red="0.72156862745098038" green="0.74901960784313726" blue="0.82352941176470584" alpha="0.20000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="marine-opacity-50">
+            <color red="0.039000000804662704" green="0.14100000262260437" blue="0.3880000114440918" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

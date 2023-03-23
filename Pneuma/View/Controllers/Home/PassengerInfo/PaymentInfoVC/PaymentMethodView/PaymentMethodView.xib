@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PaymentMethodView" customModule="Pneuma" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQb-H9-omE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQR-1D-eoy">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Visa-4578" image="radioUnselectedGray">
+                                <color key="titleColor" name="appBlack"/>
+                            </state>
+                            <state key="selected" image="radioSelectedPurple"/>
+                            <connections>
+                                <action selector="paymentMethodButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="n4b-8O-9hu"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC2-wh-Fqt">
+                            <rect key="frame" x="0.0" y="54" width="414" height="1"/>
+                            <color key="backgroundColor" name="paleGreyThree"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="rYQ-cR-5IX"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HC2-wh-Fqt" secondAttribute="trailing" id="5Kw-l0-c6Q"/>
+                        <constraint firstItem="HC2-wh-Fqt" firstAttribute="top" secondItem="XQR-1D-eoy" secondAttribute="bottom" id="5YP-GS-I2G"/>
+                        <constraint firstAttribute="trailing" secondItem="XQR-1D-eoy" secondAttribute="trailing" id="BiQ-EQ-pJu"/>
+                        <constraint firstAttribute="bottom" secondItem="HC2-wh-Fqt" secondAttribute="bottom" id="DHz-1k-qgF"/>
+                        <constraint firstAttribute="height" constant="55" id="Haj-9R-jNt"/>
+                        <constraint firstItem="XQR-1D-eoy" firstAttribute="top" secondItem="yQb-H9-omE" secondAttribute="top" id="NPW-xT-eRc"/>
+                        <constraint firstItem="XQR-1D-eoy" firstAttribute="leading" secondItem="yQb-H9-omE" secondAttribute="leading" id="O9G-r0-QHl"/>
+                        <constraint firstItem="HC2-wh-Fqt" firstAttribute="leading" secondItem="yQb-H9-omE" secondAttribute="leading" id="rrT-VQ-YaO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yQb-H9-omE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0KC-dd-GS8"/>
+                <constraint firstItem="yQb-H9-omE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hxi-cP-VcJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yQb-H9-omE" secondAttribute="trailing" id="n3s-sF-bEk"/>
+                <constraint firstAttribute="bottom" secondItem="yQb-H9-omE" secondAttribute="bottom" id="zOB-3V-wMJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="paymentButton" destination="XQR-1D-eoy" id="wYd-El-BTM"/>
+                <outlet property="separatorView" destination="HC2-wh-Fqt" id="0nT-Xm-Z3G"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="-151.33928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="radioSelectedPurple" width="27" height="27"/>
+        <image name="radioUnselectedGray" width="27" height="27"/>
+        <namedColor name="appBlack">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="paleGreyThree">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

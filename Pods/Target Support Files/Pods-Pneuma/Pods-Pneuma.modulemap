@@ -1,0 +1,6 @@
+framework module Pods_Pneuma {
+  umbrella header "Pods-Pneuma-umbrella.h"
+
+  export *
+  module * { export * }
+}

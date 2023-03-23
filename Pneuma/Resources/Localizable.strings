@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Pneuma
+
+  Created by Chitra on 24/02/21.
+  Copyright © 2021 iTechnolabs. All rights reserved.
+*/
+
+
+"appName" = "Pneuma";
+"networkNotReachable" = "Network is not reachable";
+"somethingWentWrong" = "Something went wrong";
+"sessionExpired" = "Your session has been expired. Please login again to continue.";
+
+"ok" = "Ok";
+"no" = "No";
+"yes" = "Yes";
+"cancel" = "Cancel";
+
+//VALIDATIONS
+
+"answerTheQuestion" = "Please answer the question first";
+"chooseOption" = "Please select a suitable option";
+"confirmLogout" = "Are you sure you want to logout?";
+
+//sign/login
+"enterEmailAddress" = "Please enter the email address";
+"enterPassword" = "Please enter the password";
+"enterValidEmailAddress" = "Please enter the valid email address";
+"enterFullName" = "Please enter full name";
+"enterValidPassword" = "Password does not match";
+"enterPassword" = "Please enter the password";
+"InvalidPassword" = "Pasword must contain 6-8 characters and it must be alphanumeric";
+"emptyOTP" = "Please enter OTP.";
+"validOTP" = "Please enter valid OTP.";
+"enterOldPassword" = "Please enter old password";
+"enterConfirmPassword" = "Please enter confirm password";
+"enterValidPhone" = "Please enter valid phone number";
+"enterDOB" = "Please enter valid date of birth";
+"enterNationality" = "Please enter your nationality";
+"enterIssueDate" = "Please enter your passport's issue date";
+"enterExpiryDate" = "Please enter your passport's expiry date";
+"enterCountryCode" = "Please enter your passport's Country Code";
+"enterPassportNumber" = "Please enter your passport's number";
+"enterCitizenshipNUmber" = "Please enter your Citizenship Number";

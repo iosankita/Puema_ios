@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0sU-b6-i88">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Payment MethodVC-->
+        <scene sceneID="PBD-jR-pXh">
+            <objects>
+                <viewController storyboardIdentifier="PaymentMethodVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7df-Ow-Tli" customClass="PaymentMethodVC" customModule="Pneuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WiQ-yV-AgK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9o-x8-HbA" customClass="CustomNavigationView" customModule="Pneuma" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="107.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Payment Method"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftButtonImage" value="backButtonWhite"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rightButtonTitle" value="Select"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwL-xX-zNf">
+                                <rect key="frame" x="0.0" y="107.5" width="414" height="754.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zu6-YQ-olf">
+                                        <rect key="frame" x="20" y="20" width="374" height="112"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ7-Ie-aJo">
+                                                <rect key="frame" x="165" y="20" width="44.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                                <color key="textColor" name="black2"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.225" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1n-Cr-BDd">
+                                                <rect key="frame" x="155.5" y="52.5" width="63.5" height="34"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="24"/>
+                                                <color key="textColor" name="black2"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="vQ7-Ie-aJo" firstAttribute="top" secondItem="Zu6-YQ-olf" secondAttribute="top" constant="20" id="9ZX-tq-8t9"/>
+                                            <constraint firstItem="vQ7-Ie-aJo" firstAttribute="centerX" secondItem="Zu6-YQ-olf" secondAttribute="centerX" id="FkD-L3-KZg"/>
+                                            <constraint firstItem="N1n-Cr-BDd" firstAttribute="centerX" secondItem="Zu6-YQ-olf" secondAttribute="centerX" id="IFb-nI-6AZ"/>
+                                            <constraint firstAttribute="height" constant="112" id="JAm-AH-cmn"/>
+                                            <constraint firstItem="N1n-Cr-BDd" firstAttribute="top" secondItem="vQ7-Ie-aJo" secondAttribute="bottom" constant="10" id="cEk-C3-xwA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Existing Payment Method" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVe-rb-gt1">
+                                        <rect key="frame" x="20" y="152" width="224.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" name="marine"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9T-Ek-NOU">
+                                        <rect key="frame" x="20" y="350" width="374" height="67"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
+                                        <state key="normal" title="Add Payment Method" backgroundImage="buttonBGOrange">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addMethodButtonAction:" destination="7df-Ow-Tli" eventType="touchUpInside" id="vme-AV-UQF"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7OP-TY-REc">
+                                        <rect key="frame" x="20" y="192" width="374" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="435-OR-35P"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="7df-Ow-Tli" id="VSw-lS-doi"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zu6-YQ-olf" secondAttribute="trailing" constant="20" id="2wK-r2-yxE"/>
+                                    <constraint firstItem="TVe-rb-gt1" firstAttribute="top" secondItem="Zu6-YQ-olf" secondAttribute="bottom" constant="20" id="8dF-pn-rcI"/>
+                                    <constraint firstItem="7OP-TY-REc" firstAttribute="centerX" secondItem="gwL-xX-zNf" secondAttribute="centerX" id="9g4-bL-7JN"/>
+                                    <constraint firstItem="Zu6-YQ-olf" firstAttribute="leading" secondItem="gwL-xX-zNf" secondAttribute="leading" constant="20" id="Cms-8y-SQV"/>
+                                    <constraint firstItem="7OP-TY-REc" firstAttribute="leading" secondItem="TVe-rb-gt1" secondAttribute="leading" id="HaF-G5-8NS"/>
+                                    <constraint firstItem="o9T-Ek-NOU" firstAttribute="top" secondItem="7OP-TY-REc" secondAttribute="bottom" constant="30" id="ZS7-YJ-plY"/>
+                                    <constraint firstItem="Zu6-YQ-olf" firstAttribute="top" secondItem="gwL-xX-zNf" secondAttribute="top" constant="20" id="eui-yv-j41"/>
+                                    <constraint firstItem="o9T-Ek-NOU" firstAttribute="centerX" secondItem="gwL-xX-zNf" secondAttribute="centerX" id="lCZ-59-Ibf"/>
+                                    <constraint firstItem="7OP-TY-REc" firstAttribute="top" secondItem="TVe-rb-gt1" secondAttribute="bottom" constant="20" id="pdg-4r-ta6"/>
+                                    <constraint firstItem="o9T-Ek-NOU" firstAttribute="leading" secondItem="7OP-TY-REc" secondAttribute="leading" id="vth-gD-ifb"/>
+                                    <constraint firstItem="Zu6-YQ-olf" firstAttribute="centerX" secondItem="gwL-xX-zNf" secondAttribute="centerX" id="wkR-JK-fhR"/>
+                                    <constraint firstAttribute="bottom" secondItem="o9T-Ek-NOU" secondAttribute="bottom" constant="20" id="xee-Cm-bUr"/>
+                                    <constraint firstItem="TVe-rb-gt1" firstAttribute="leading" secondItem="Zu6-YQ-olf" secondAttribute="leading" id="xmE-3U-0LT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O2c-Xd-Iae"/>
+                        <color key="backgroundColor" name="paleGrey"/>
+                        <constraints>
+                            <constraint firstItem="gwL-xX-zNf" firstAttribute="leading" secondItem="O2c-Xd-Iae" secondAttribute="leading" id="2vw-Vt-hds"/>
+                            <constraint firstItem="V9o-x8-HbA" firstAttribute="height" secondItem="WiQ-yV-AgK" secondAttribute="height" multiplier="0.12" id="KJ6-VK-s6a"/>
+                            <constraint firstItem="O2c-Xd-Iae" firstAttribute="trailing" secondItem="V9o-x8-HbA" secondAttribute="trailing" id="Lj6-Pl-mgl"/>
+                            <constraint firstItem="gwL-xX-zNf" firstAttribute="top" secondItem="V9o-x8-HbA" secondAttribute="bottom" id="RF6-Vj-kkl"/>
+                            <constraint firstItem="V9o-x8-HbA" firstAttribute="leading" secondItem="WiQ-yV-AgK" secondAttribute="leading" id="a69-SL-hUt"/>
+                            <constraint firstItem="V9o-x8-HbA" firstAttribute="top" secondItem="WiQ-yV-AgK" secondAttribute="top" id="awG-SQ-Cqe"/>
+                            <constraint firstItem="o9T-Ek-NOU" firstAttribute="height" secondItem="WiQ-yV-AgK" secondAttribute="height" multiplier="0.075" id="fX0-oS-IJE"/>
+                            <constraint firstItem="O2c-Xd-Iae" firstAttribute="bottom" secondItem="gwL-xX-zNf" secondAttribute="bottom" id="lT6-2V-0jm"/>
+                            <constraint firstItem="gwL-xX-zNf" firstAttribute="trailing" secondItem="O2c-Xd-Iae" secondAttribute="trailing" id="ndL-JC-WvW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navigation" destination="V9o-x8-HbA" id="Wov-Ar-SpI"/>
+                        <outlet property="tableView" destination="7OP-TY-REc" id="irp-EN-Ppe"/>
+                        <outlet property="tableViewHeightConstraint" destination="435-OR-35P" id="p6Y-vO-dAy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuV-yf-MKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="105"/>
+        </scene>
+        <!--Add Payment MethodVC-->
+        <scene sceneID="xPa-7t-EPR">
+            <objects>
+                <viewController storyboardIdentifier="AddPaymentMethodVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pzO-zp-T5K" customClass="AddPaymentMethodVC" customModule="Pneuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Obc-ao-oEc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khE-OU-7hQ" customClass="CustomNavigationView" customModule="Pneuma" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="107.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Add Payment Method"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftButtonImage" value="backButtonWhite"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Payment Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlw-lD-aSn">
+                                <rect key="frame" x="25" y="125.5" width="157" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="13"/>
+                                <color key="textColor" name="marine-opacity-50"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jwu-3C-F15">
+                                <rect key="frame" x="25" y="164.5" width="364" height="697.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="25" id="Qui-f3-9ZG">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="W5A-eX-bHG">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lnq-t2-s88">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="delegate" destination="pzO-zp-T5K" id="oT0-5i-enl"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qdE-v7-lmv"/>
+                        <color key="backgroundColor" name="paleGrey"/>
+                        <constraints>
+                            <constraint firstItem="Jwu-3C-F15" firstAttribute="centerX" secondItem="Obc-ao-oEc" secondAttribute="centerX" id="0MH-UP-ttQ"/>
+                            <constraint firstItem="Jwu-3C-F15" firstAttribute="top" secondItem="Xlw-lD-aSn" secondAttribute="bottom" constant="20.5" id="AmI-6B-cP4"/>
+                            <constraint firstItem="Xlw-lD-aSn" firstAttribute="leading" secondItem="qdE-v7-lmv" secondAttribute="leading" constant="25" id="KdI-k2-3mG"/>
+                            <constraint firstItem="Jwu-3C-F15" firstAttribute="leading" secondItem="Xlw-lD-aSn" secondAttribute="leading" id="MWh-FA-a3b"/>
+                            <constraint firstItem="qdE-v7-lmv" firstAttribute="trailing" secondItem="khE-OU-7hQ" secondAttribute="trailing" id="aTU-M1-gMb"/>
+                            <constraint firstItem="khE-OU-7hQ" firstAttribute="top" secondItem="Obc-ao-oEc" secondAttribute="top" id="enf-V0-MK2"/>
+                            <constraint firstItem="khE-OU-7hQ" firstAttribute="height" secondItem="Obc-ao-oEc" secondAttribute="height" multiplier="0.12" id="eoq-Aw-gjx"/>
+                            <constraint firstItem="khE-OU-7hQ" firstAttribute="leading" secondItem="Obc-ao-oEc" secondAttribute="leading" id="tGL-Kq-RXc"/>
+                            <constraint firstItem="qdE-v7-lmv" firstAttribute="bottom" secondItem="Jwu-3C-F15" secondAttribute="bottom" id="w7P-FT-92b"/>
+                            <constraint firstItem="Xlw-lD-aSn" firstAttribute="top" secondItem="khE-OU-7hQ" secondAttribute="bottom" constant="18" id="wt2-cM-5nC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Jwu-3C-F15" id="aPS-Ko-KTH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6o-2F-lSD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="104"/>
+        </scene>
+        <!--Payment Method ListVC-->
+        <scene sceneID="A4O-ha-jbf">
+            <objects>
+                <viewController storyboardIdentifier="PaymentMethodListVC" id="0sU-b6-i88" customClass="PaymentMethodListVC" customModule="Pneuma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xWv-9J-aH0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sux-9w-TVJ" customClass="CustomNavigationView" customModule="Pneuma" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="107.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Payment Methods"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="popOnLeftButtonClick" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zcG-LA-CVx">
+                                <rect key="frame" x="20" y="128.5" width="374" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="u7P-zJ-D6I"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJy-aF-MNb">
+                                <rect key="frame" x="20" y="548.5" width="374" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
+                                <state key="normal" title="Add Payment Method" backgroundImage="buttonBGOrange">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addPaymentMethod:" destination="0sU-b6-i88" eventType="touchUpInside" id="VkN-RU-PCX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VED-Mc-0xw"/>
+                        <color key="backgroundColor" name="paleGrey"/>
+                        <constraints>
+                            <constraint firstItem="zcG-LA-CVx" firstAttribute="centerX" secondItem="VED-Mc-0xw" secondAttribute="centerX" id="7Z8-jE-HNT"/>
+                            <constraint firstItem="sux-9w-TVJ" firstAttribute="leading" secondItem="VED-Mc-0xw" secondAttribute="leading" id="B7C-HS-qvm"/>
+                            <constraint firstItem="zcG-LA-CVx" firstAttribute="leading" secondItem="VED-Mc-0xw" secondAttribute="leading" constant="20" id="BKT-o6-ZYO"/>
+                            <constraint firstItem="sJy-aF-MNb" firstAttribute="leading" secondItem="VED-Mc-0xw" secondAttribute="leading" constant="20" id="K86-Ed-TLt"/>
+                            <constraint firstItem="zcG-LA-CVx" firstAttribute="top" secondItem="sux-9w-TVJ" secondAttribute="bottom" constant="21" id="OyL-Oz-aDJ"/>
+                            <constraint firstItem="sJy-aF-MNb" firstAttribute="top" secondItem="zcG-LA-CVx" secondAttribute="bottom" constant="20" id="Shi-mo-uUa"/>
+                            <constraint firstItem="sux-9w-TVJ" firstAttribute="top" secondItem="xWv-9J-aH0" secondAttribute="top" id="f6N-2l-hLK"/>
+                            <constraint firstItem="VED-Mc-0xw" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zcG-LA-CVx" secondAttribute="bottom" constant="10" id="f8A-pG-NEm"/>
+                            <constraint firstItem="VED-Mc-0xw" firstAttribute="trailing" secondItem="sux-9w-TVJ" secondAttribute="trailing" id="hW7-8a-6l6"/>
+                            <constraint firstItem="sux-9w-TVJ" firstAttribute="height" secondItem="xWv-9J-aH0" secondAttribute="height" multiplier="0.12" id="sqV-ja-yrO"/>
+                            <constraint firstItem="VED-Mc-0xw" firstAttribute="trailing" secondItem="sJy-aF-MNb" secondAttribute="trailing" constant="20" id="yGU-jO-TMH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customNav" destination="sux-9w-TVJ" id="XuP-zM-ffF"/>
+                        <outlet property="tableHeight" destination="u7P-zJ-D6I" id="NFV-iU-J0A"/>
+                        <outlet property="tableView" destination="zcG-LA-CVx" id="wAn-Yp-xQF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vli-lg-Efc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButtonWhite" width="21" height="17"/>
+        <image name="buttonBGOrange" width="316" height="55"/>
+        <namedColor name="black2">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="marine">
+            <color red="0.039215686274509803" green="0.14117647058823529" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="marine-opacity-50">
+            <color red="0.039000000804662704" green="0.14100000262260437" blue="0.3880000114440918" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="paleGrey">
+            <color red="0.95686274509803926" green="0.96862745098039216" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

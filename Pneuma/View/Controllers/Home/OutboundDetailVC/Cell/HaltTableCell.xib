@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Italic.ttf">
+            <string>Poppins-Italic</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HaltTableCell" rowHeight="156" id="KGk-i7-Jjw" customClass="HaltTableCell" customModule="Pneuma" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5w-sV-KsZ">
+                        <rect key="frame" x="29" y="8" width="291" height="140"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czw-Q6-u3w">
+                                <rect key="frame" x="0.0" y="0.0" width="291" height="140"/>
+                            </button>
+                            <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WBm-bq-GYx">
+                                <rect key="frame" x="14" y="8" width="263" height="29"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ovalWhite" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-64-xk8">
+                                        <rect key="frame" x="0.0" y="5" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="3hA-se-R8a"/>
+                                            <constraint firstAttribute="width" secondItem="TaM-64-xk8" secondAttribute="height" id="zpd-qu-ck6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York Jphn F. Kennedy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjx-ko-S6z">
+                                        <rect key="frame" x="26" y="5" width="205.5" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="EGX-Mo-teP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" name="black2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="JFK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlu-Ay-jt2">
+                                        <rect key="frame" x="241.5" y="4.5" width="21.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" name="heather"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Qjx-ko-S6z" secondAttribute="bottom" constant="8" id="95m-cP-kf2"/>
+                                    <constraint firstItem="hlu-Ay-jt2" firstAttribute="centerY" secondItem="Qjx-ko-S6z" secondAttribute="centerY" id="9J0-QH-Ct6"/>
+                                    <constraint firstItem="Qjx-ko-S6z" firstAttribute="height" secondItem="hlu-Ay-jt2" secondAttribute="height" multiplier="0.941176" id="GKc-Ol-G4p"/>
+                                    <constraint firstAttribute="height" constant="29" id="aXZ-6H-bzn"/>
+                                    <constraint firstItem="Qjx-ko-S6z" firstAttribute="top" secondItem="WBm-bq-GYx" secondAttribute="top" constant="5" id="n9V-6i-hMd"/>
+                                    <constraint firstItem="TaM-64-xk8" firstAttribute="centerY" secondItem="Qjx-ko-S6z" secondAttribute="centerY" id="oS9-Gy-qnR"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="n1h-Vd-Odk">
+                                <rect key="frame" x="14" y="45" width="263" height="86"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York Jphn F. Kennedy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkP-rS-uH1">
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Italic" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" name="black2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York Jphn F. Kennedy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUD-b3-3vT">
+                                        <rect key="frame" x="0.0" y="29.5" width="263" height="27"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Italic" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" name="black2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York Jphn F. Kennedy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-WJ-Vrl">
+                                        <rect key="frame" x="0.0" y="58.5" width="263" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Italic" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" name="black2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="czw-Q6-u3w" secondAttribute="bottom" id="2Tk-ax-usH"/>
+                            <constraint firstItem="czw-Q6-u3w" firstAttribute="top" secondItem="U5w-sV-KsZ" secondAttribute="top" id="BGR-8k-ct8"/>
+                            <constraint firstAttribute="bottom" secondItem="n1h-Vd-Odk" secondAttribute="bottom" constant="9" id="GcK-h1-dRz"/>
+                            <constraint firstItem="WBm-bq-GYx" firstAttribute="top" secondItem="U5w-sV-KsZ" secondAttribute="top" constant="8" id="K90-H2-X80"/>
+                            <constraint firstItem="n1h-Vd-Odk" firstAttribute="leading" secondItem="WBm-bq-GYx" secondAttribute="leading" id="OXa-Uq-auN"/>
+                            <constraint firstItem="WBm-bq-GYx" firstAttribute="leading" secondItem="U5w-sV-KsZ" secondAttribute="leading" constant="14" id="Qmm-qU-8Ci"/>
+                            <constraint firstAttribute="trailing" secondItem="WBm-bq-GYx" secondAttribute="trailing" constant="14" id="bUO-D0-zFX"/>
+                            <constraint firstItem="n1h-Vd-Odk" firstAttribute="trailing" secondItem="WBm-bq-GYx" secondAttribute="trailing" id="g1K-4v-Zjn"/>
+                            <constraint firstItem="n1h-Vd-Odk" firstAttribute="top" secondItem="WBm-bq-GYx" secondAttribute="bottom" constant="8" id="p1T-nd-rlj"/>
+                            <constraint firstItem="czw-Q6-u3w" firstAttribute="leading" secondItem="U5w-sV-KsZ" secondAttribute="leading" id="tH3-Pa-ViQ"/>
+                            <constraint firstAttribute="trailing" secondItem="czw-Q6-u3w" secondAttribute="trailing" id="zuq-YS-M4O"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="lightGray2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="U5w-sV-KsZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="AQu-dA-kjc"/>
+                    <constraint firstAttribute="trailing" secondItem="U5w-sV-KsZ" secondAttribute="trailing" id="CCZ-AQ-rMJ"/>
+                    <constraint firstAttribute="bottom" secondItem="U5w-sV-KsZ" secondAttribute="bottom" constant="8" id="Cfr-rz-ReN"/>
+                    <constraint firstItem="U5w-sV-KsZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Iix-Wl-TRc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblAirportIataCode" destination="hlu-Ay-jt2" id="ZLc-Pu-Ilp"/>
+                <outlet property="lblAirportName" destination="Qjx-ko-S6z" id="I6Q-eO-CKf"/>
+                <outlet property="lblArrivalTime" destination="XkP-rS-uH1" id="reC-j0-xnC"/>
+                <outlet property="lblDepartureTime" destination="Nym-WJ-Vrl" id="skz-eN-s29"/>
+                <outlet property="lblRestTime" destination="wUD-b3-3vT" id="ZP0-fa-jh4"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="164.0625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ovalWhite" width="9" height="9"/>
+        <namedColor name="black2">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="heather">
+            <color red="0.68235294117647061" green="0.59607843137254901" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGray2">
+            <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
